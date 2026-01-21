@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>✈️ Airline Sentiment Analysis</h2>
+
+<textarea id="text" placeholder="Enter text..."></textarea>
+<br>
+<button onclick="predict()">Analyze</button>
+
+<div class="result" id="result"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
