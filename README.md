@@ -1,3 +1,6 @@
+# Link 
+https://sentiment-api-s7yc.onrender.com
+
 # Sentiment Analysis API
 
 REST API for sentiment analysis of English text using a trained machine learning model.
@@ -36,6 +39,9 @@ The service predicts sentiment (`negative`, `neutral`, `positive`) and confidenc
 
 ##  Run with Docker
 
-### Build image
+### Through terminal
 ```bash
-docker build -t sentiment-api .
+curl -X POST https://sentiment-api-s7yc.onrender.com/v1/predict \
+-H "Content-Type: application/json" \
+-d '{"text":"This airline is terrible"}'
+
